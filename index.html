@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./agenda.css"> 
+    <title>Agenda Telefones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="conteiner">
+        <header>
+            <img src="./imagens/logo.png" alt="Agenda">
+            <h1>Agenda Virtual de Henrique Schneider</h1>
+        </header>    
+        <form id="form-agenda">
+        <input type="text" id="nome" required placeholder="Nome">
+        <input type="number" id="telefone" required placeholder="telefone">
+        <select name="tipo" id="tipo" required>
+            <option value="1">Fixo</option>
+            <option value="2" selected>Celular</option>
+          </select>
+        
+        
+        <button type="submit">Adicionar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Num. Telefone</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>        
+    </div>
+    <script src="./agenda.js"></script>
+</body>
+</html>
